@@ -7,7 +7,7 @@ import java.util.Scanner;
  * --> Faça um programa que peça dois números e imprima a soma.
  */
 
-public class ExercicioUm {
+public class Exercicio01 {
 
     public static void main(String[] args) {
 
