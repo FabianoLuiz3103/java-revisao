@@ -25,7 +25,7 @@ public class Exercicio08 {
                     altura = altura/100;
                 }
                 if(altura <= 0 || altura > 2.5){
-                    System.out.println("A altura deve ser um valor maior que zero e menor que 2.5M ");
+                    System.out.println("A altura deve ser um valor maior que zero e menor que 2.5M! ");
                     continue;
                 }
                 break;
