@@ -43,17 +43,41 @@ public class Exercicio020 {
             System.out.println("\n\tOpção inválida! Deve ser +, -, * ou /");
         }
         resultado = realizarOperacoes(opcao, numeros);
-        //a verificação de par ou ímpar só vale para nº inteiro -> arrumar isso
+
+        boolean inteiro = isInteiro(resultado);
+        String parOrImpar = parImpar(resultado);
        System.out.println("\n----------------------------------------------" +
                "\nO NÚMERO " + resultado + "" +
-               "\nÉ: " + ((resultado%2==0)? "PAR; " : "ÍMPAR;") +
-               "\nÉ: " + ((resultado < 0)? "NEGATIVO; " : "POSITIVO;") +
-               "\nÉ: " + ((resultado==(int)resultado)?"INTEIRO. " : "DECIMAL.")
+               "\nÉ: " + (inteiro? parOrImpar  : " O NÚMERO É DECIMAL, A PARTE INTEIRA DELE É: " + parOrImpar) +
+               "\nÉ: " + (negativoOrPositivoOrZero(resultado)) +
+               "\nÉ: " + (inteiro?"INTEIRO. " : "DECIMAL.")
 
        );
 
         scanner.close();
 
+    }
+
+    private static String negativoOrPositivoOrZero(double numero){
+        if(numero < 0){
+            return "NEGTIVO";
+        } else  if(numero > 0){
+            return "POSITIVO";
+        }else{
+            return "NEUTRO(ZERO)";
+        }
+    }
+
+    private static boolean isInteiro(double numero){
+        return numero==(int)numero;
+    }
+
+    private static String parImpar(double numero){
+        if((int)numero%2==0){
+            return "PAR";
+        }else {
+            return "ÍMPAR";
+        }
     }
 
     private static double realizarOperacoes(String opcao, double[] numeros){
@@ -70,11 +94,15 @@ public class Exercicio020 {
                     break;
                 case "/":
                     try{
-                        result = numeros[0]/numeros[1];
+                        if (numeros[1] == 0) {
+                            result = 0.0;
+                        } else {
+                            result = numeros[0] / numeros[1];
+                        }
                     }catch (ArithmeticException e){
                         result =0;
                     }
-                    if (Double.isInfinite(result)) {result = 0.0;}
+
                     break;
                 default:
                     result = 0;
