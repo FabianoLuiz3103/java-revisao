@@ -48,7 +48,7 @@ public class Exercicio020 {
         String parOrImpar = parImpar(resultado);
        System.out.println("\n----------------------------------------------" +
                "\nO NÚMERO " + resultado + "" +
-               "\nÉ: " + (inteiro? parOrImpar  : " O NÚMERO É DECIMAL, A PARTE INTEIRA DELE É: " + parOrImpar) +
+               "\nÉ: " + (inteiro? parOrImpar  : " A PARTE INTEIRA DELE É: " + parOrImpar) +
                "\nÉ: " + (negativoOrPositivoOrZero(resultado)) +
                "\nÉ: " + (inteiro?"INTEIRO. " : "DECIMAL.")
 
