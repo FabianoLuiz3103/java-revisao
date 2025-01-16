@@ -13,6 +13,7 @@ public class Exercicio010 {
 
         Scanner scanner = new Scanner(System.in);
         int[] numeros = new int[2];
+        int soma = 0;
         for (int i = 0; i<numeros.length; i++){
             while (true){
                 try{
@@ -28,10 +29,11 @@ public class Exercicio010 {
         System.out.print("\n------------------------------------------------------------" +
                 "\nO intervalo entre " + numeros[0] + " e " + numeros[1] + " é: \n");
        if(numeros[0] > numeros[1]){
-           for(int i = numeros[0]; i >= numeros[1]; i--){System.out.println(i);}
+           for(int i = numeros[0]; i >= numeros[1]; i--){System.out.println(i); soma=soma+i;}
        }else{
-           for(int i = numeros[0]; i <= numeros[1]; i++){System.out.println(i);}
+           for(int i = numeros[0]; i <= numeros[1]; i++){System.out.println(i);soma=soma+i;}
        }
+       System.out.println("\n\t-- E A SOMA DESSES NÚMEROS É: " + soma);
        scanner.close();
     }
 }
