@@ -1,6 +1,5 @@
 package br.com.fabianoLuiz3103.exercicios.terceiraLista;
 
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
