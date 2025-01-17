@@ -1,6 +1,7 @@
 package br.com.fabianoLuiz3103.exercicios.terceiraLista;
 
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -14,18 +15,11 @@ public class Exercicio017 {
         Scanner scanner = new Scanner(System.in);
         double[] numeros = new double[10];
         double maior, menor, soma = 0;
+        Random random = new Random();
 
         for(int i = 0; i < numeros.length; i++){
-            while (true){
-                try{
-                    System.out.print("\n\tInforme o " + (i+1) + "º valor: ");
-                    numeros[i] = scanner.nextDouble();
-                    break;
-                }catch (InputMismatchException e){
-                    System.out.print("\n\tERRO! O valor deve ser do tipo numérico! ");
-                    scanner.nextLine();
-                }
-            }
+            double numeroAleatorio = random.nextDouble()*1001;
+            numeros[i] = Math.floor(numeroAleatorio*100)/100;
             soma = soma+numeros[i];
         }
         System.out.print("\n--------------------------------------------------------" +
