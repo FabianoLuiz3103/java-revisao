@@ -36,7 +36,12 @@ public class Exercicio019 {
                         "\n" + numeroInformado + " É PRIMO!");
             } else{
                 System.out.println("\n----------------------------" +
-                        "\n" + numeroInformado + " NÃO É PRIMO!");
+                        "\n" + numeroInformado + " NÃO É PRIMO! E É DIVISÍVEL POR: ");
+                for(int i = numeroInformado; i > 0; i--){
+                    if(numeroInformado%i==0){
+                        System.out.println(i);
+                    }
+                }
             }
         }else{
             System.out.println("\n\tNÃO EXISTE NÚMERO PRIMO MENOR QUE 1!");
