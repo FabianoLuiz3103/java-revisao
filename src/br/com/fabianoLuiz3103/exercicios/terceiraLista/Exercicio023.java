@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author FabianoLuiz3103
  * --> Calcular número médio de alunos por turma
  */
-public class Exercício023 {
+public class Exercicio023 {
 
     public static void main(String[] args) {
 
