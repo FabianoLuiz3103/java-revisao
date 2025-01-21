@@ -34,6 +34,7 @@ public class Exercicio032 {
             System.out.println("EM " + i + " O PERCENTUAL FOI +" + (percentual*100) + " O VALOR DO SALÁRIO FICOU R$" + formatar(salarioInicial));
         }
 
+        scanner.close();
 
     }
 
