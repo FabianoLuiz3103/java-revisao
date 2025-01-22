@@ -1,4 +1,4 @@
-package br.com.fabianoLuiz3103.exercicios.segundaLista;
+package br.com.fabianoLuiz3103.exercicios.lista02;
 
 /**
  * @author FabianoLuiz3103

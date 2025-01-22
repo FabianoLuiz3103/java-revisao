@@ -1,8 +1,7 @@
-package br.com.fabianoLuiz3103.exercicios.segundaLista;
+package br.com.fabianoLuiz3103.exercicios.lista02;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.Set;
 
 /**
  * @author FabianoLuiz3103
