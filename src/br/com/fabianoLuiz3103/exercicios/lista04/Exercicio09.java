@@ -11,7 +11,7 @@ public class Exercicio09 {
     public static void main(String[] args) {
 
         int[] vetorA = new int[10];
-        int pares = 0, soma = 0;
+        int pares = 0, soma = 0, somaMultiplosDeCinco = 0;
         Random random = new Random();
 
         System.out.print("\n\n-----------------------------------------------" +
@@ -22,12 +22,16 @@ public class Exercicio09 {
             if(vetorA[i]%2==0){
                 pares++;
             }
+            if(vetorA[i]%5==0){
+                somaMultiplosDeCinco+=vetorA[i];
+            }
             soma+=vetorA[i];
         }
 
         System.out.println("\n------------------------------------------" +
                 "\nA QUANTIDADE DE NÚMEROS PARES É: " + pares +
-                "\nA SOMA DOS ELEMENTOS É: " + soma);
+                "\nA SOMA DOS ELEMENTOS É: " + soma +
+                "\nA SOMA DOS ELEMENTOS MÚLTIPLOS DE 5 É: " + somaMultiplosDeCinco);
     }
 
     private static int sortearNumero(int[] vetor, int indiceAtualVetor, Random random){
