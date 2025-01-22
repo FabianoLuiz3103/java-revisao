@@ -1,4 +1,4 @@
-package br.com.fabianoLuiz3103.exercicios.primeiraLista;
+package br.com.fabianoLuiz3103.exercicios.lista01;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
