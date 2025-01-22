@@ -11,7 +11,7 @@ public class Exercicio09 {
     public static void main(String[] args) {
 
         int[] vetorA = new int[10];
-        int pares = 0;
+        int pares = 0, soma = 0;
         Random random = new Random();
 
         System.out.print("\n\n-----------------------------------------------" +
@@ -22,10 +22,12 @@ public class Exercicio09 {
             if(vetorA[i]%2==0){
                 pares++;
             }
+            soma+=vetorA[i];
         }
 
         System.out.println("\n------------------------------------------" +
-                "\nA QUANTIDADE DE NÚMEROS PARES É: " + pares);
+                "\nA QUANTIDADE DE NÚMEROS PARES É: " + pares +
+                "\nA SOMA DOS ELEMENTOS É: " + soma);
     }
 
     private static int sortearNumero(int[] vetor, int indiceAtualVetor, Random random){
