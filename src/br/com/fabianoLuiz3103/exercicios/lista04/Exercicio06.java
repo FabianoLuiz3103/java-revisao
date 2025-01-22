@@ -23,7 +23,7 @@ public class Exercicio06 {
             vetorC[i] = vetorA[i]-vetorB[i];
 
             System.out.print(
-                    "\nA["+i+"]: " + vetorA[i] + " + B["+i+"]: " + vetorB[i] + " = C["+i+"]: " + vetorC[i]);
+                    "\nA["+i+"]: " + vetorA[i] + " - B["+i+"]: " + vetorB[i] + " = C["+i+"]: " + vetorC[i]);
         }
     }
 }
