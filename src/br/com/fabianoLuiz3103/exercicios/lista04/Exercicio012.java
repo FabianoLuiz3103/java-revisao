@@ -14,14 +14,17 @@ public class Exercicio012 {
         int[] idades = new int[10];
         Random random = new Random();
         int maior = Integer.MIN_VALUE, menor = Integer.MAX_VALUE;
+        int indexMaior = 0, indexMenor = 0;
 
         for(int i = 0; i < idades.length; i++){
             idades[i] = random.nextInt(50)+1;
             if(idades[i] > maior){
                 maior = idades[i];
+                indexMaior = i;
             }
             if(idades[i] < menor){
                 menor = idades[i];
+                indexMenor = i;
             }
         }
         System.out.print("\n----------------------------------------------" +
@@ -30,7 +33,8 @@ public class Exercicio012 {
             System.out.print(i + ", ");
         }
 
-        System.out.println("\nA MENOR É: " + menor+
-                "\nA MAIOR É: " + maior);
+        System.out.println("\nA MENOR É: " + menor+ ", POSIÇÃO: " + indexMenor +
+                "\nA MAIOR É: " + maior+ ", POSIÇÃO: " + indexMaior
+        );
     }
 }
