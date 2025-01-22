@@ -5,7 +5,9 @@ import java.util.Random;
 
 /**
  * @author FabianoLuiz3103
- * --> Programa que conta quantidade de valores pares em um vetor!
+ * --> Programa que conta quantidade de valores pares em um vetor,
+ * soma os elementos, soma os múltiplos de 5, faz a média e informa
+ * a % de pares e % de ímpares.
  */
 public class Exercicio09 {
 
