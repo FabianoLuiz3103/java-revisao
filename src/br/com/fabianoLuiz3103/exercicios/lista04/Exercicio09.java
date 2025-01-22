@@ -31,7 +31,8 @@ public class Exercicio09 {
         System.out.println("\n------------------------------------------" +
                 "\nA QUANTIDADE DE NÚMEROS PARES É: " + pares +
                 "\nA SOMA DOS ELEMENTOS É: " + soma +
-                "\nA SOMA DOS ELEMENTOS MÚLTIPLOS DE 5 É: " + somaMultiplosDeCinco);
+                "\nA SOMA DOS ELEMENTOS MÚLTIPLOS DE 5 É: " + somaMultiplosDeCinco+
+                "\nA MÉDIA ARITMÉTICA É: " + (soma/(double)vetorA.length));
     }
 
     private static int sortearNumero(int[] vetor, int indiceAtualVetor, Random random){
