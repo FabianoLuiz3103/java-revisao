@@ -12,11 +12,7 @@ public class Exercicio029 {
         int potencia, base = 2;
 
         for(int i = 0; i < vetorA.length; i++){
-            potencia=1;
-            for(int j = 0; j < i; j++){
-                potencia*=base;
-            }
-            vetorA[i] = potencia;
+            vetorA[i] =(int) Math.pow(base,i);
             System.out.println(retornarPotencia(base,i)+ ": " + vetorA[i]);
         }
 
