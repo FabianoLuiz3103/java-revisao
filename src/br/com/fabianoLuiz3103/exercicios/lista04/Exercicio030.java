@@ -18,8 +18,8 @@ public class Exercicio030 {
             fatorial =1;
             for(int j = vetorA[i]; j > 0; j--){
                 fatorial*=j;
-                vetorB[i] = fatorial;
             }
+            vetorB[i] = fatorial;
             System.out.println(vetorA[i] + "!: " + vetorB[i]);
         }
 
