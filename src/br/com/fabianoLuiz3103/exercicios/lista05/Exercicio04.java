@@ -12,7 +12,7 @@ public class Exercicio04 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String[][] agenda = new String[30][24];
+        String[][] agenda = new String[31][25];
         int opcao;
 
         do{
