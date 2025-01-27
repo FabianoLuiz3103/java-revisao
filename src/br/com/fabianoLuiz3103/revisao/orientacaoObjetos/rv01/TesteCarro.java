@@ -16,5 +16,19 @@ public class TesteCarro {
                 "\nNÚMERO PASSAGEIROS: " + van.numPassageiros+
                 "\nCAP COMBUSTÍVEL: " + van.capCombustivel+
                 "\nCONSUMO COMBUSTÍVEL: " + van.consumoCombustivel);
+
+
+        Carro fusca = new Carro();
+        fusca.marca="Volkswagen";
+        fusca.modelo="Fusca";
+        fusca.numPassageiros=4;
+        fusca.capCombustivel=30;
+        fusca.consumoCombustivel=0.15;
+
+        System.out.println("\nCARRO: " + fusca.modelo+
+                "\nMARCA: " + fusca.marca+
+                "\nNÚMERO PASSAGEIROS: " + fusca.numPassageiros+
+                "\nCAP COMBUSTÍVEL: " + fusca.capCombustivel+
+                "\nCONSUMO COMBUSTÍVEL: " + fusca.consumoCombustivel);
     }
 }
