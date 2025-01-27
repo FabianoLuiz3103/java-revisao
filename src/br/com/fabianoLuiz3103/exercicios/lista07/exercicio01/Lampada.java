@@ -7,6 +7,6 @@ public class Lampada {
 
     String marca;
     int tensao;
-    int potencia;
+    int potenciaM;
     double preco;
 }
