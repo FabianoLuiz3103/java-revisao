@@ -1,7 +1,7 @@
 package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revMetodosSimples;
 
 /**
- * revisão de métodos símples, sem parâmetros e sem retorno!
+ * revisão de métodos símples, sem parâmetros e/ou retorno!
  */
 public class Carro {
 
