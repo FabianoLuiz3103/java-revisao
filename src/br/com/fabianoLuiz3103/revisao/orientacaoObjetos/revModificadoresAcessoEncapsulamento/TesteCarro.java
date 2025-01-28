@@ -5,11 +5,12 @@ public class TesteCarro {
     public static void main(String[] args) {
 
         Carro van = new Carro();
-        van.marca="Fiat";
-        van.modelo="Ducato";
-        van.numPassageiros=10;
-        van.capCombustivel=100;
-        van.consumoCombustivel=0.2;
+        van.setMarca("Fiat");
+        van.setModelo("Ducato");
+        van.setNumPassageiros(10);
+        van.setCapCombustivel(100);
+        van.setConsumoCombustivel(0.2);
 
+        System.out.println(van.getMarca() + " | " + van.getModelo());
     }
 }
