@@ -14,18 +14,41 @@ public class Carro {
         System.out.println("\nA classe carro foi instânciada! ");
     }
 
-    Carro(String marca_){
-        marca = marca_;
+    Carro(String marca){
+        this.marca = marca;
     }
 
-    Carro(String marca_, String modelo_, int numPassageiros_, double capCombustivel_, double consumoCombustivel_){
-        marca = marca_;
-        modelo = modelo_;
-        numPassageiros = numPassageiros_;
-        capCombustivel = capCombustivel_;
-        consumoCombustivel = consumoCombustivel_;
+    Carro(String marca, String modelo, int numPassageiros, double capCombustivel, double consumoCombustivel){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.numPassageiros = numPassageiros;
+        this.capCombustivel = capCombustivel;
+        this.consumoCombustivel = consumoCombustivel;
     }
 
+
+    //--> Um construtor chamando o outro
+    Carro(String marca, String modelo, int numPassageiros){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.numPassageiros = numPassageiros;
+        System.out.println("Chamando construtor marca,modelo,numPassageiros");
+    }
+    Carro(String marca, String modelo){
+        this(marca, modelo, 10);
+        System.out.println("Chamando construtor marca,modelo");
+    }
+
+    //--> Usando THIS
+    void exibirAutonomia2(){
+        System.out.println("A autonomia do carro é: " + this.obterAutonomia2() + "km");
+    }
+
+    double obterAutonomia2(){
+        return capCombustivel * consumoCombustivel;
+    }
+
+    //--> Sem THIS
     void exibirAutonomia(){
         System.out.println("A autonomia do carro é: " + capCombustivel * consumoCombustivel + "km");
     }
