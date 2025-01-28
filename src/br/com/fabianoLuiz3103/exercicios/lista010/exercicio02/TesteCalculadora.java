@@ -7,8 +7,9 @@ public class TesteCalculadora {
         imprimir(Calculadora.somar(2,5));
         imprimir(Calculadora.subtrair(2,5));
         imprimir(Calculadora.multiplicar(2,5));
-        System.out.print("\nRESULTADO: " + Calculadora.dividir(2,5));
+        System.out.print("\nRESULTADO: " + Calculadora.dividir(2,5)+"\n");
         imprimir(Calculadora.potencia(2,5));
+        imprimir(Calculadora.fatorial(3));
     }
     //numero inteiro
     private static void imprimir(int numero){

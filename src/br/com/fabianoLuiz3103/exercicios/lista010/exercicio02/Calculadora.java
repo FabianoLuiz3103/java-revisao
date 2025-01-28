@@ -33,4 +33,17 @@ public class Calculadora {
         }
         return resultado;
     }
+
+    public static int fatorial(int i){
+        if(i >= 0){
+            int fatorial = 1;
+            for(int j = i; j > 0; j--){
+                fatorial*=j;
+            }
+            return fatorial;
+        }else{
+            System.out.println("\n\tERRO! O número deve ser positivo! ");
+            return 0;
+        }
+    }
 }
