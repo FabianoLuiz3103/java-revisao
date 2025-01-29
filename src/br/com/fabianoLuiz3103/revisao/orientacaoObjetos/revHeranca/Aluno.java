@@ -1,6 +1,6 @@
 package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revHeranca;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 
     private String[] cursos;
     private String[][] notas;
