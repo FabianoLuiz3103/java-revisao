@@ -12,6 +12,8 @@ public class Teste {
 
         System.out.println(aluno.getNome());
         System.out.println(professor.getNome());
+
+
     }
 
 }

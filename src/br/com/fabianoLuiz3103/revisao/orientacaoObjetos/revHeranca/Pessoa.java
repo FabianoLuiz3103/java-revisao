@@ -6,11 +6,20 @@ package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revHeranca;
  * nome, endereco, telefone e cpf
  * Agora a classe Aluno e Professor só tem os atributos específicos
  * e herdam os atributos da classe professor
- * --> RELACIONAMENTO "É UM"
+ * --> RELACIONAMENTO "É UM" --> Só fazer herança nesse caso
  * ALUNO É UMA PESSOA
  * PROFESSOR É UMA PESSOA
  */
 public class Pessoa {
+
+    public Pessoa(){}
+
+    public Pessoa(String nome, String endereco, String telefone) {
+        super();
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
 
     private String nome;
     private String endereco;
