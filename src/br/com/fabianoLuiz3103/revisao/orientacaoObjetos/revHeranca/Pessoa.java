@@ -12,6 +12,14 @@ package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revHeranca;
  */
 public class Pessoa {
 
+    private String nome;
+    private String endereco;
+    private String telefone;
+    private String cpf;
+
+    protected String nomeVisibilidade;
+
+
     public Pessoa(){}
 
     public Pessoa(String nome, String endereco, String telefone) {
@@ -20,12 +28,6 @@ public class Pessoa {
         this.endereco = endereco;
         this.telefone = telefone;
     }
-
-    private String nome;
-    private String endereco;
-    private String telefone;
-    private String cpf;
-
     public String getNome() {
         return nome;
     }
