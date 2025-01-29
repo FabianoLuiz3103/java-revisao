@@ -2,45 +2,9 @@ package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revHeranca;
 
 public class Professor {
 
-    private String nome;
-    private String endereco;
-    private String telefone;
-    private String cpf;
     private String departamento;
     private String nomeCurso;
     private double salario;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 
     public String getDepartamento() {
         return departamento;
