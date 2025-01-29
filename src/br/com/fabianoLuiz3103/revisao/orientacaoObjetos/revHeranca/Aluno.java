@@ -59,6 +59,6 @@ public class Aluno {
 
     public double calcularMedia(){return 0.0;}
 
-    public double verificarAprovado(){return 0.0;}
+    public boolean verificarAprovado(){return true;}
 
 }
