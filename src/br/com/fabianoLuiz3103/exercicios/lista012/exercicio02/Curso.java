@@ -38,4 +38,21 @@ public class Curso {
     public void setAlunos(Aluno[] alunos) {
         this.alunos = alunos;
     }
+
+    public void exibirInfo(){
+       System.out.println("\n" +
+               "\n >>> CURSO <<<" +
+               "\nNOME: "+ this.nome+
+               "\nHORÁRIO: " + this.horario+
+               "\n\n >>> PROFESSOR <<<");
+       if(this.professor!=null) {
+           this.professor.exibirInfo();
+       }
+       System.out.println("\n>>> ALUNOS <<<");
+       if(this.alunos!=null){
+           for(Aluno a: this.alunos){
+               a.exibirInfo();
+           }
+       }
+    }
 }

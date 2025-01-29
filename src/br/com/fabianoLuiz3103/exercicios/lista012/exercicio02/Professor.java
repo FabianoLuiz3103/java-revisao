@@ -29,4 +29,12 @@ public class Professor {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public void exibirInfo(){
+        System.out.printf("\n" +
+                "\nNOME: %s" +
+                "\nDEPARTAMENTO: %s" +
+                "\nE-MAIL: %s", this.nome, this.departamento, this.email);
+    }
+
 }
