@@ -7,7 +7,7 @@ public class Teste {
         Animal camelo = new Animal("Camelo",
                 150, "Amarelo", "Terra", 2.0);
         Animal tubarao = new Peixe("Tubarão",
-                300,1.5,"Barabtanas e cauda");
+                300,1.5);
         Animal urso = new Mamifero("Urso-do-canadá",
                 180, "vermelho", 0.5, "Mel");
 
