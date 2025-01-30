@@ -16,5 +16,7 @@ public class Teste {
 
         //NOME_PROFESSOR = NOME_ALUNO; --> Não tem como!
 
+        System.out.println(Constantes.URL_BLOG);
+
     }
 }
