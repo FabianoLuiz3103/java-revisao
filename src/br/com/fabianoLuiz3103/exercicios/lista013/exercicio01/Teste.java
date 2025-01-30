@@ -11,6 +11,17 @@ public class Teste {
         calcularRendimento(contaPoupanca, 0.5);
         System.out.println(contaPoupanca);
 
+        /**
+         * //como conta especial não tem métodos específicos, posso usar a ref de conta bancária e a instância de conta especial
+         * a instância da conta especial vai chamar o método saque sobrescrito da classe conta especial
+         */
+        System.out.println("\n\n *** CONTA ESPECIAL ***");
+        ContaBancaria contaEspecial = new ContaEspecial("Yolanda Binhardi", "6544", 0.0, 300.00);
+        realizarSaque(contaEspecial, 100);
+        realizarSaque(contaEspecial, 100);
+        realizarDeposito(contaEspecial, 450.40);
+
+
     }
 
     private static void calcularRendimento(ContaPoupanca contaPoupanca, double taxa){
