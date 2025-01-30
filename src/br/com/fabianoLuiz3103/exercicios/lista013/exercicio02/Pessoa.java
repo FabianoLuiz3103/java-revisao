@@ -34,7 +34,6 @@ public abstract class Pessoa {
     public String toString() {
         return "Pessoa{" +
                 "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
                 ", rendaBruta=" + rendaBruta +
                 '}';
     }
