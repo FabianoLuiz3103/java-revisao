@@ -6,8 +6,9 @@ public class ContaPoupanca extends ContaBancaria{
 
     private int diaRendimento;
 
-    public ContaPoupanca(String nomeCliente, String numConta, double saldo) {
+    public ContaPoupanca(String nomeCliente, String numConta, double saldo, int diaRendimento) {
         super(nomeCliente, numConta, saldo);
+        this.diaRendimento = diaRendimento;
     }
 
     public int getDiaRendimento() {
