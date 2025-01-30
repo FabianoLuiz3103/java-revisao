@@ -4,11 +4,13 @@ public abstract class Pessoa {
 
     private String nome;
     private String cpf;
+    private double rendaBruta;
 
     Pessoa(){}
-    public Pessoa(String nome, String cpf) {
+    public Pessoa(String nome, String cpf, double rendaBruta) {
         this.nome = nome;
         this.cpf = cpf;
+        this.rendaBruta = rendaBruta;
     }
 
     public String getNome() {
@@ -27,13 +29,22 @@ public abstract class Pessoa {
         this.cpf = cpf;
     }
 
-    public abstract double calcularImposto(double rendaBruta);
+    public double getRendaBruta() {
+        return rendaBruta;
+    }
+
+    public void setRendaBruta(double rendaBruta) {
+        this.rendaBruta = rendaBruta;
+    }
+
+    public abstract double calcularImposto();
 
     @Override
     public String toString() {
         return "Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
+                ", rendaBruta=" + rendaBruta +
                 '}';
     }
 }
