@@ -20,8 +20,8 @@ public class ContaEspecial extends ContaBancaria{
     @Override
     public boolean sacar(double valorSaque) {
         double saldoEspecial = limite+super.getSaldo();
-        if(saldoEspecial >= valorSaque){
-            super.setSaldo(saldoEspecial-valorSaque);
+        if(saldoEspecial-valorSaque >= valorSaque){
+            super.setSaldo(super.getSaldo()-valorSaque);
             return true;
         }else {
             return false;
