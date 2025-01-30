@@ -1,6 +1,6 @@
 package br.com.fabianoLuiz3103.exercicios.lista013.exercicio03;
 
-public abstract class Animal {
+public class Animal {
 
     private String nome;
     private double comprimento;
@@ -72,13 +72,14 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "nome='" + nome + '\'' +
-                ", comprimento=" + comprimento +
-                ", numPatas=" + numPatas +
-                ", cor='" + cor + '\'' +
-                ", ambiente='" + ambiente + '\'' +
-                ", velocidade=" + velocidade +
-                '}';
+
+        return   "Animal: " + nome +
+                "\nComprimento: " + comprimento +
+                "\nPatas: " + numPatas +
+                "\nCor: " + cor +
+                "\nAmbiente: " + ambiente +
+                "\nVelociade: "+ velocidade;
+
+
     }
 }
