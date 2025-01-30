@@ -20,8 +20,7 @@ public class Peixe extends Animal{
 
     @Override
     public String toString() {
-        return "Peixe{" +
-                "caracteristicas='" + caracteristicas + '\'' +
-                "} " + super.toString();
+        return super.toString() +
+                "\nCaracteristicas: " + caracteristicas;
     }
 }
