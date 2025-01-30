@@ -3,7 +3,7 @@ package br.com.fabianoLuiz3103.exercicios.lista013.exercicio02;
 public abstract class Pessoa {
 
     private String nome;
-    protected double rendaBruta;
+    private double rendaBruta;
 
     Pessoa(){}
     public Pessoa(String nome, double rendaBruta) {
