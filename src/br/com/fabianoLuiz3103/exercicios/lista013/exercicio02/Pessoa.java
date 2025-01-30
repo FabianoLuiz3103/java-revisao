@@ -5,6 +5,7 @@ public abstract class Pessoa {
     private String nome;
     private String cpf;
 
+    Pessoa(){}
     public Pessoa(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
@@ -27,4 +28,12 @@ public abstract class Pessoa {
     }
 
     public abstract double calcularImposto(double rendaBruta);
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                '}';
+    }
 }
