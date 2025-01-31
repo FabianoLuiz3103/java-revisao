@@ -4,12 +4,12 @@ public class Papagaio extends Ave {
 
 
     @Override
-    public String voar() {
-        return null;
+    public void emitirSom() {
+
     }
 
     @Override
-    public String emitirSom() {
-        return null;
+    public void voar() {
+
     }
 }

@@ -12,13 +12,14 @@ public class Gato extends Mamifero{
         this.raca = raca;
     }
 
+
     @Override
-    public String emitirSom() {
-        return null;
+    public void emitirSom() {
+
     }
 
     @Override
-    public String amamentar() {
-        return null;
+    public void amamentar() {
+
     }
 }
