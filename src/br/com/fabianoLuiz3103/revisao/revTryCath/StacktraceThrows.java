@@ -8,6 +8,13 @@ import java.util.Scanner;
  *
  * getMessage() -> Retorna a descrição do erro
  * printStackTrace() -> Imprime o stack trace do erro -> em qual linha aconteceu o erro
+ *
+ *
+ * Erro x Exception
+ * Error -> Não é tratado
+ * Exception->  é tratada
+ * Runtime -> Acontece em tempo de execução, não tem o que fazer, só try e catch -> São não verificadas
+ * Exception verificadas o compilador já avisa que precisa tratar ela
  */
 public class StacktraceThrows {
 
