@@ -1,6 +1,6 @@
 package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revInterfaces;
 
-public class Gato extends Mamifero{
+public class Gato extends Mamifero implements AnimalDomesticado, AnimalEstimacao{
 
     private String raca;
 
@@ -20,6 +20,26 @@ public class Gato extends Mamifero{
 
     @Override
     public void amamentar() {
+
+    }
+
+    @Override
+    public void levarVeterinario() {
+
+    }
+
+    @Override
+    public void alimentar() {
+
+    }
+
+    @Override
+    public void brincar() {
+
+    }
+
+    @Override
+    public void levarPassear() {
 
     }
 }

@@ -1,6 +1,6 @@
 package br.com.fabianoLuiz3103.revisao.orientacaoObjetos.revInterfaces;
 
-public class Cachorro extends Mamifero{
+public class Cachorro extends Mamifero implements AnimalDomesticado, AnimalEstimacao{
 
     private String tamanho;
     private String raca;
@@ -29,6 +29,28 @@ public class Cachorro extends Mamifero{
 
     @Override
     public void amamentar() {
+
+    }
+
+    //métodos de domesticado
+    @Override
+    public void levarVeterinario() {
+
+    }
+
+    @Override
+    public void alimentar() {
+
+    }
+
+    //métodos de estimação
+    @Override
+    public void brincar() {
+
+    }
+
+    @Override
+    public void levarPassear() {
 
     }
 }
